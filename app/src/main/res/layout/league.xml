@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/league_icon"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unknown" />
+
+        <RelativeLayout
+            android:id="@+id/league_namelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/league_icon" >
+
+            <TextView
+                android:id="@+id/league_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/league_nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/league_name"
+                android:layout_centerHorizontal="true"
+                android:text="NAME"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/league_lplayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/league_namelayout"
+            android:layout_alignBottom="@+id/league_namelayout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/league_namelayout" >
+
+            <TextView
+                android:id="@+id/league_lp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LP"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/league_lptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/league_lp"
+                android:layout_centerHorizontal="true"
+                android:text="LP"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/league_promolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/league_lplayout" >
+
+            <TextView
+                android:id="@+id/league_promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROMO"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/league_promotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/league_promo"
+                android:layout_centerHorizontal="true"
+                android:text="PROMO"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

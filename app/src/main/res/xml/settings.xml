@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="general_category"
+        android:title="General" >
+        <ListPreference
+            android:key="general_server"
+            android:title="Preferred Server" android:entries="@array/servers" android:entryValues="@array/servers"/>
+        <ListPreference
+            android:entries="@array/seasons"
+            android:entryValues="@array/seasons"
+            android:key="general_season"
+            android:title="Season" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="general_loadimages"
+            android:summary="Doesnt look as fancy, but loads faster and uses less bandwidth."
+            android:title="Load Icons" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="general_errorreporting"
+            android:summary="Sends an error report to the developer in case of unknown errors or missing icons."
+            android:title="Error Reporting" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="connection_category"
+        android:title="Connection" >
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dialogTitle="Connection Timeout:"
+            android:inputType="number"
+            android:key="connection_connecttimeout"
+            android:summary="API Connection Timeout in seconds"
+            android:title="Connection Timeout: %amount% sec" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dialogTitle="Read Timeout:"
+            android:inputType="number"
+            android:key="connection_readtimeout"
+            android:summary="API Read Timeout in seconds"
+            android:title="Read Timeout: %amount% sec" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="cache_category"
+        android:title="Cache" >
+        <Preference
+            android:key="cache_icons"
+            android:title="Total Icons: 0" />
+        <Preference
+            android:key="cache_delete"
+            android:summary="Deletes the icon image cache."
+            android:title="Delete Icon Cache" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

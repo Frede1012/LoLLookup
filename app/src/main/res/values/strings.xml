@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoL Lookup</string>
+    <string name="ad_id">AD ID HERE</string>
+
+    <string-array name="servers">
+        <item>NA</item>
+        <item>EUW</item>
+        <item>EUNE</item>
+        <item>BR</item>
+        <item>LAN</item>
+        <item>LAS</item>
+        <item>OCE</item>
+        <item>RU</item>
+        <item>KR</item>
+    </string-array>
+    <string-array name="seasons">
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+
+    <color name="red">#FF0000</color>
+    <color name="win">#66CC33</color>
+    <color name="loss">#DD7777</color>
+
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+
+</resources>
